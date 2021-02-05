@@ -5,7 +5,7 @@ Files for CS 487 final group project - benchmarking PostgreSQL on an Ubuntu 20.0
 
 ## Part 1: Data Generation and System Selection
 
-For simplicity, we decided to analyze only PostgreSQL, as it was the database system we were the most familiar with. We also decided it would allow us more time to experiment if we oinly needed to maintain and become familiar with a single system.
+For simplicity, we decided to analyze only PostgreSQL, as it was the database system we were the most familiar with. We also decided it would allow us more time to experiment if we only needed to maintain and become familiar with a single system.
 
 ### Data Generation
 
