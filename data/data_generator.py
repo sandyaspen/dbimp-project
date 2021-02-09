@@ -96,6 +96,30 @@ def generate_data(args):
     
     return columns
 
+def export_cols_to_csv(columns, file_name):
+    size = len(columns.unique1)
+
+    with open(file_name, 'w') as file:
+        for i in range(size):
+            file.write(str(columns.unique1[i]) + ",")
+            file.write(str(columns.unique3[i]) + ",")
+            file.write(str(columns.unique2[i]) + ",")
+            file.write(str(columns.two[i]) + ",")
+            file.write(str(columns.four[i]) + ",")
+            file.write(str(columns.ten[i]) + ",")
+            file.write(str(columns.twenty[i]) + ",")
+            file.write(str(columns.one_percent[i]) + ",")
+            file.write(str(columns.ten_percent[i]) + ",")
+            file.write(str(columns.fifty_percent[i]) + ",")
+            file.write(str(columns.even_one_percent[i]) + ",")
+            file.write(str(columns.odd_one_percent[i]) + ",")
+            file.write(str(columns.stringu1[i]) + ",")
+            file.write(str(columns.stringu2[i]) + ",")
+            file.write(str(columns.string4[i]) + ",")
+            file.write('\n')
+
+        
+
 
 if __name__ == "__main__":
     #argument parsing
@@ -106,4 +130,4 @@ if __name__ == "__main__":
 
     random.seed()
 
-    print(generate_data(args))
+    export_cols_to_csv(generate_data(args), args.file_name)
