@@ -9,7 +9,7 @@ For simplicity, we decided to analyze only PostgreSQL, as it was the database sy
 
 ### Data Generation
 
-Three test data files were generated for this project, the same files as used in the Wisconsin Benchmark. Interestingly, it was fairly difficult to find a good example of such a generator, many of the generators were for more common types of data such as phone numbers. We decided to use the data generator component of sqalpel's implementation of a wisconsin benchmark tool, found at: https://github.com/sqalpel/wisconsin/tree/master/src. This tool was freely available and produced the data that we desired in an easy-to-import format. We only needed to edit the output to be delimited with commas rather than pipes, and then imported them into our database using PostgreSQL's \copy command. The final csv files can be found in the [data directory.](https://github.com/sandyaspen/dbimp-project/tree/main/data) Screenshots showing the imported data tables can be found in the [screenshots directory.](https://github.com/sandyaspen/dbimp-project/tree/main/data)
+[A python data generation script](https://github.com/sandyaspen/dbimp-project/blob/main/data/data_generator.py) was created to enable us to make datasets of custom sizes that still adhere to the structure as explained in the Wisconsin Database Benchmark paper. Example csv files can be found in the [data directory.](https://github.com/sandyaspen/dbimp-project/tree/main/data) Screenshots showing the imported data tables can be found in the [screenshots directory.](https://github.com/sandyaspen/dbimp-project/tree/main/data)
 
 ### System Selection
 
