@@ -1,3 +1,5 @@
+#Sara Alotaibi
+
 DROP TABLE public.onektup;
 
 CREATE TABLE public.onektup
