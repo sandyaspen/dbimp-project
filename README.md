@@ -14,3 +14,7 @@ For simplicity, we decided to analyze only PostgreSQL, as it was the database sy
 ### System Selection
 
 We chose to work with a VM for this project. We are analyzing the effects of changing the configurations for PostgreSQL. In an attempt to create similar resdults across different hardware, we are creating a virtual machine instance to perform our tests in. We are using Ubuntu 20.04 LTS as the operating system, as it is a very popular linux distribution and is often installed on virtual machines. We ran into a few issues setting up a database server and connecting pgadmin to our server, which were mostly related to the VM's virtual networking.
+
+### Benchmark Design
+
+The primary goal of our benchmark is to evaluate different settings of the Postgres memory parameters, and to determine the optimal settings for these parameters given our specific workloads and system configuration. The design document can be found [here.] (https://github.com/sandyaspen/dbimp-project/tree/main/documents/bechmark_design.pdf)
