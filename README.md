@@ -18,3 +18,7 @@ We chose to work with a VM for this project. We are analyzing the effects of cha
 ### Benchmark Design
 
 The primary goal of our benchmark is to evaluate different settings of the Postgres memory parameters, and to determine the optimal settings for these parameters given our specific workloads and system configuration. The design document can be found [here.](https://github.com/sandyaspen/dbimp-project/blob/main/documents/benchmark_design.pdf)
+
+### Benchmark Results Presentation
+
+The results for the project are included in a slideshow presentation [here.](https://github.com/sandyaspen/dbimp-project/blob/main/documents/ResultsPresentation.pdf)
